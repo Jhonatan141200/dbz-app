@@ -1,0 +1,21 @@
+<h1 class="p-2"><strong>Dragon Ball Z - APP</strong></h1>
+<hr>
+<div class="container">
+  <div class="row" >
+    <div class="col-5">
+      <dbz-personajes-list
+      [characterList]="characters"
+      (idCharacterEmit)="deleteCharacter($event)"
+      ></dbz-personajes-list>
+    </div>
+    <div class="col-2"></div>
+    <div class="col-5">
+      <app-add-personaje (onNewCharacter)="addCharacter($event)"></app-add-personaje>
+    </div>
+</div>
+
+
+</div>
+
+
+
